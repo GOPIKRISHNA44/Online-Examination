@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<title>exam</title>
+	<link rel="stylesheet" type="text/css" href="exam.css"></head>
+<body background="42.jpg" onload="window.history.forward()">
+<form action="generate.php" method="post" name="a" onsubmit="return check()"><div id="hi"><h1 align="right"><font size="20">-Online Exam Portal</font></h1></div>
+<div id="form"><font size="6px">Choose no.of questions:</font><select class="selectpicker"  name="get" id="select">
+<option value="s"> Please select the number of Questions</option>
+<option value="5"> 5 </option>
+<option value="8"> 8 </option>
+<option value="9"> 9 </option>
+<option value="11"> 11 </option>
+</select>
+
+<script>
+function check()
+{
+if(a.get.value!="s"){
+if(window.confirm("Are you sure to continue with "+a.get.value+"questions"))
+return true;
+else
+return false;
+}
+else
+{alert("please select number of questions");
+return false;
+}
+}
+</script>
+<br>
+<input type="submit" class="btn btn-success" value="SUBMIT"/></form></div>
+<br><br><br><blockquote class="blockquote">
+  <p class="mb-0">Don’t watch the clock, Do what it does, KEEP GOING.</p>
+  <footer class="blockquote-footer">A wise Engineering student</footer>
+</blockquote>
+</body>
+</html>
